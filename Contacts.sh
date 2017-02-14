@@ -74,7 +74,6 @@ do
     strftime('%Y') - BirthdayYear
   FROM ZSWIFT
   ORDER BY NextOccur;
-  -- LIMIT 3;
   
   " | sqlite3 $file | while read line;
   do
